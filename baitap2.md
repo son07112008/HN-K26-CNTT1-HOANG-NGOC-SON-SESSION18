@@ -1,0 +1,3 @@
+Triển khai (Cấu trúc Cookie): Để shipper không bị mất giỏ hàng hay văng đăng nhập khi đóng trình duyệt, hệ thống cần thiết lập Persistent Cookie bằng thuộc tính Max-Age=2592000 (duy trì 30 ngày) kết hợp hai cờ bảo mật quan trọng là HttpOnly (ngăn mã JavaScript phía client truy cập trái phép nhằm chống tấn công XSS) và Secure (bắt buộc truyền tải qua HTTPS).
+
+Kiểm thử (Hard Reload): Khi giao diện cập nhật màu sắc mới nhưng trình duyệt vẫn hiển thị màu cũ do tệp bị lưu trong bộ nhớ đệm, cần thực hiện thao tác xóa Cache đệm bằng tổ hợp phím Ctrl + Shift + R (trên Windows) hoặc mở DevTools, nhấp chuột phải vào nút Reload rồi chọn "Empty Cache and Hard Reload".
